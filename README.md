@@ -1,1 +1,2 @@
-![alt text](<sdlc/Screenshot (283).png>)
+![alt text](<sdlc/SDLC Assesement Status.png>)
+[text](<git/simplilearn certificate.pdf>)
