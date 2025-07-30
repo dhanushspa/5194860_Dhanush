@@ -7,7 +7,7 @@
 ![alt text](<git/linus screenshot_4.jpg>) 
 ![alt text](<git/linus screenshot_5.jpg>)
 ![alt text](<git/linus screenshot_6.jpg>)
-![alt text](<git/linus screenshot_7.jpg>) 
+![](<git/linus screenshot_7.jpg>) 
 ![alt text](<Linux_Practice/linux day 2 practice-1.png.jpg>) 
 ![alt text](<Linux_Practice/linux day 2 practice-2.png.jpg>) 
 ![alt text](<Linux_Practice/linux day 2 practice-3.png.jpg>) 
