@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_STRINGS 1000
+#define MAX_LEN 100
+
+void matchingStrings(int strings_count, char strings[][MAX_LEN], int queries_count, char queries[][MAX_LEN], int results[]) {
+    for (int i = 0; i < queries_count; i++) {
+        results[i] = 0;
+        for (int j = 0; j < strings_count; j++) {
+            if (strcmp(queries[i], strings[j]) == 0) {
+                results[i]++;
+            }
+        }
+    }
+}
+
+int main() {
+    int n, q;
+    scanf("%d", &n);
+    char strings[MAX_STRINGS][MAX_LEN];
+    for (int i = 0; i < n; i++) {
+        scanf("%s", strings[i]);
+    }
+    scanf("%d", &q);
+    char queries[MAX_STRINGS][MAX_LEN];
+    for (int i = 0; i < q; i++) {
+        scanf("%s", queries[i]);
+    }
+    int results[MAX_STRINGS];
+    matchingStrings(n, strings, q, queries, results);
+    for (int i = 0; i < q; i++) {
+        printf("%d\n", results[i]);
+    }
+
+    return 0;
+}
+
