@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <limits.h>
+
+void miniMax(int arr[5]) {
+    long long t = 0;
+    int min = INT_MAX;
+    int max = INT_MIN;
+
+    for (int i = 0; i < 5; i++) {
+        t += arr[i];
+        if (arr[i] < min) min = arr[i];
+        if (arr[i] > max) max = arr[i];
+    }
+
+    long long min_sum = t - max;
+    long long max_sum = t - min;
+
+    printf("%lld %lld\n", min_sum, max_sum);
+}
+
+int main() {
+    int arr[5];
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+    }
+    miniMax(arr);
+    return 0;
+}
+
