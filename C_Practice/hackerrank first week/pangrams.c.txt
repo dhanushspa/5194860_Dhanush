@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdbool.h>
+bool checkPangram(const char str[]) {
+    bool mark[26] = { false };
+    int index;
+    for (int i = 0; str[i] != '\0'; i++) {
+        char c = str[i];
+        if ('A' <= c && c <= 'Z') {
+            index = c - 'A';
+        } else if ('a' <= c && c <= 'z') {
+            index = c - 'a';
+        } else {
+            continue;
+        }
+        mark[index] = true;
+    }
+    for (int i = 0; i < 26; i++) {
+        if (!mark[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+int main() {
+    char s[1000];
+    if (!fgets(s, sizeof(s), stdin)) return 1;
+
+    if (checkPangram(s)) {
+        printf("pangram\n");
+    } else {
+        printf("not pangram\n");
+    }
+    return 0;
+}
