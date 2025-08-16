@@ -1,6 +1,6 @@
 ![alt text](<sdlc/SDLC Assesement Status.png>)
 ![text](<git/simplilearn Certificate.jpg>)
 ![texts](<git/certificate git practice png.png>)
-![texts](<git/working with branches.png.png>)
-![texts](<git/Undoing Changes and Time Traveling.png.png>)
+![texts](<git/working with branches.png>)
+![texts](<git/Undoing Changes and Time Traveling.png>)
 ![texts](<C_Practice/Introduction to c.jpg>)
